@@ -122,7 +122,7 @@ class LikeCommands(commands.Cog):
 
                     data = await response.json()
                     embed = discord.Embed(
-                        title="FREE FIRE LIKE",
+                        title="JIXXU FREE FIRE LIKE BOT",
                         color=0x2ECC71 if data.get("status") == 1 else 0xE74C3C,
                         timestamp=datetime.now()
                     )
@@ -141,8 +141,8 @@ class LikeCommands(commands.Cog):
                     else:
                         embed.description = "This UID has already received the maximum likes today.\nPlease wait 24 hours and try again"
 
-                    embed.set_footer(text="DEVELOPED BY THUG")
-                    embed.description += "\n🔗 JOIN : https://discord.gg/awPm5B3QFg"
+                    embed.set_footer(text="DEVELOPED BY JIXXU")
+                    embed.description += "\n🔗 JOIN : https://discord.gg/V32ETDKHQy"
                     await ctx.send(embed=embed, mention_author=True, ephemeral=is_slash)
 
         except asyncio.TimeoutError:
